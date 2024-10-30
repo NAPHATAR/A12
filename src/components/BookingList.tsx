@@ -8,7 +8,7 @@ interface BookingItem {
   name: string;
   surname: string;
   id: string;
-  hospitial: string;
+  hospital: string;
   bookDate: string;
 }
 
@@ -32,7 +32,7 @@ export default function BookingList() {
           <div className="grid grid-cols-2 gap-4">
             <p><span className="font-semibold text-gray-700">Name:</span> {booking.name} {booking.surname}</p>
             <p><span className="font-semibold text-gray-700">National ID:</span> {booking.id}</p>
-            <p><span className="font-semibold text-gray-700">Hospital:</span> {booking.hospitial}</p>
+            <p><span className="font-semibold text-gray-700">Hospital:</span> {booking.hospital}</p>
             <p><span className="font-semibold text-gray-700">Date:</span> {booking.bookDate}</p>
           </div>
           <button
