@@ -15,16 +15,16 @@ export default function Booking() {
   const [surname, setSurname] = useState('');
   const [id, setId] = useState('');
   const [bookDate, setBookDate] = useState<Dayjs | null>(null);
-  const [hospitial, setHospitial] = useState('');
+  const [hospital, setHospital] = useState('');
 
   const makeReservation = () => {
-    if (name && surname && bookDate && hospitial && id) {
+    if (name && surname && bookDate && hospital && id) {
       const item: BookingItem = {
         name,
         surname,
         id,
         bookDate: dayjs(bookDate).format("YYYY/MM/DD"),
-        hospitial
+        hospital
       };
       dispatch(addBooking(item));
       alert("Reservation submitted successfully!");
@@ -95,8 +95,8 @@ export default function Booking() {
           <select
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="hospitial"
-            value={hospitial}
-            onChange={(e) => setHospitial(e.target.value)}
+            value={hospital}
+            onChange={(e) => setHospital(e.target.value)}
           >
             <option value="" disabled>Select Hospital</option>
             <option value="Chulalongkorn Hospital">Chulalongkorn Hospital</option>
