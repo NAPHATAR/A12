@@ -27,7 +27,7 @@ export default function Card({ hid, hospitalName, imgSrc, rating, onRatingChange
     <InteractiveCard>
       <Link href={`/hospital/${hid}`} passHref>
         <div className="rounded overflow-hidden relative cursor-pointer">
-          <Image className="inset-0 w-full h-full object-cover rounded-t-lg" src={imgSrc} alt={hospitalName} width={600} height={400} priority/>
+          <Image className="inset-0 w-full h-full object-cover rounded-t-lg" src={imgSrc} alt={hospitalName} width={600} height={400} loading='lazy'/>
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{hospitalName}</div>
             {rating !== undefined && (

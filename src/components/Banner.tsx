@@ -36,7 +36,7 @@ export default function Banner() {
           alt="Vaccine Service Center" 
           fill
           className="cursor-pointer items-center"
-          priority
+          loading='lazy'
         />
         <div className="absolute inset-0 flex items-center justify-center text-white p-5 z-10">
           <div className="text-center">

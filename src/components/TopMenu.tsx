@@ -37,7 +37,7 @@ export default async function TopMenu() {
               alt="Logo" 
               width={256}
               height={256}
-              priority
+              loading='lazy'
               className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
             />
           </TopMenuItem>
